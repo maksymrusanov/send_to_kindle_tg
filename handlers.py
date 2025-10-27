@@ -48,9 +48,8 @@ async def handle_file(message: Message, state: FSMContext):
     await message.answer(f'File sent {message.document.file_name}')
     await state.clear()
     os.remove(f'books/{file_name}')
-    await message.answer(f'File deleted {file_name}')
     if os.path.isdir('books') and len(os.listdir('books')) == 0:
         os.rmdir('books')
-        await message.answer('Folder deleted')
+
 
 
