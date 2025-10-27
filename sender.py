@@ -25,11 +25,3 @@ async def send_email(receiver_email, filename):
         print(e)
 
 
-def delete_files(file_name):
-    os.chdir('books')
-    if os.path.exists(f'../books/{file_name}'):
-        os.remove(file_name)
-    else:print('file already deleted')
-
-if __name__=='__main__':
-    delete_files(file_name=filename)

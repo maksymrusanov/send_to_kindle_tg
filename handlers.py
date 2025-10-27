@@ -1,22 +1,14 @@
 import os
-from os import getenv
-
-import dotenv
-
 import sender
-
-dotenv.load_dotenv()
-
 from aiogram import Router, F, Bot, Dispatcher
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message
-
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = getenv('BOT_TOKEN')
+TOKEN = os.getenv('BOT_TOKEN')
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
