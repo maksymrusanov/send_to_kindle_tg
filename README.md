@@ -1,5 +1,6 @@
 Hello! 👋
 
+@email_to_kindle_bot
 To use this bot:
 1)Create a Kindle account: https://www.amazon.co.uk/hz/mycd/preferences/myx#/home/settings/payment
 
