@@ -1,1 +1,1 @@
-##@email_to_kindle_bot
+#@email_to_kindle_bot
