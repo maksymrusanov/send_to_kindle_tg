@@ -1,6 +1,6 @@
 # 📚 send_to_kindle_tg
 **Telegram bot for sending books and documents to your Kindle via email**  
-Bot: `@email_to_kindle_bot` 👋
+Bot: `@email_to_kindle_bot`
 
 This bot allows you to send documents and books to your Kindle device via email.
 
