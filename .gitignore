@@ -1,6 +1,6 @@
 .venv
 .venv/
-.env
+send_to_kindle.env
 __pycache__
 __pycache__/
 .idea

@@ -2,8 +2,6 @@ services:
   bot:
     build: .
     env_file:
-      - .env
+      - send_to_kindle.env
     restart: always
-    environment:
-      - BOT_TOKEN=${BOT_TOKEN}
 
