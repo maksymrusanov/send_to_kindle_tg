@@ -52,15 +52,15 @@ pip install -r requirements.txt
 
 ### 4. Configure environment variables
 
-Create a `.env` file in the project root with the following:
+Create a `send_to_kindle.env` file in the project root with the following:
 
 ```env
-TELEGRAM_API_TOKEN=your_bot_token
+BOT_TOKEN=your_bot_token
 KINDLE_EMAIL=your_kindle_email
 SENDER_EMAIL=your_sender_email
-SMTP_SERVER=smtp_server_address
-SMTP_PORT=smtp_server_port
-SMTP_PASSWORD=your_email_password
+SMTP_SERVER=smtp_server_address(e.g., smtp.gmail.com)
+SMTP_PORT=smtp_server_port(e.g., 587)
+SMTP_PASSWORD=your_email_app_password
 ```
 
 ### 5. Run the bot
@@ -77,7 +77,8 @@ Build and run using Docker:
 
 ```bash
 docker build -t send_to_kindle_bot .
-docker run --env-file .env send_to_kindle_bot
+docker run --env-file  send_to_kindle.env --name send_to_kindle send_to_kindle_bot
+
 ```
 
 Or with Docker Compose:
